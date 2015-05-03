@@ -1,6 +1,6 @@
-CC=arm-none-eabi-gcc
-LD=arm-none-eabi-ld.bfd
-OBJCOPY=arm-none-eabi-objcopy
+CC=$(CROSS_COMPILE)gcc
+LD=$(CROSS_COMPILE)ld.bfd
+OBJCOPY=$(CROSS_COMPILE)objcopy
 
 all: bootblk.bin
 
